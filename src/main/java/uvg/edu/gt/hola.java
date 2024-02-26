@@ -51,6 +51,11 @@ public class hola {
                     String postfixExpression1 = converter1.infixToPostfix(infixExpression);
                     System.out.println("Expresión infix: " + infixExpression);
                     System.out.println("Expresión postfix con ArrayListStack: " + postfixExpression1);
+
+                    PostfixCalculator calculator = PostfixCalculator.getInstance();
+                    String expression = "12+9*";
+                    double result = calculator.evaluate(postfixExpression1);
+                    System.out.println("Result: " + result);
                     break;
 
                 case 2:
